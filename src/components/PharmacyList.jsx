@@ -9,15 +9,19 @@ export default function PharmacyList() {
   const [sortDirection, setSortDirection] = useState("asc");
 
   useEffect(() => {
+    // Simulate network latency so the loading UI can be reviewed with local data.
     const timeoutId = setTimeout(() => {
       setPharmacies(pharmacyData);
       setIsLoading(false);
     }, 1000);
 
+    // Cancel pending work on unmount and during Strict Mode's effect cleanup.
     return () => clearTimeout(timeoutId);
   }, []);
 
+  // Derive normalization from the latest input once per render to keep matching consistent.
   const normalizedQuery = query.trim().toLowerCase();
+  // Defer useMemo because this small dataset makes recalculation trivial and keeps the code simple.
   const visiblePharmacies = pharmacies
     .filter((pharmacy) =>
       pharmacy.name.toLowerCase().includes(normalizedQuery) ||
@@ -25,6 +29,7 @@ export default function PharmacyList() {
     )
     .filter((pharmacy) => !onlyActive || pharmacy.status === "active")
     .sort((a, b) => {
+      // Use locale-aware ordering that treats case and accent variations as equivalent.
       const comparison = a.name.localeCompare(b.name, "en", {
         sensitivity: "base",
       });
