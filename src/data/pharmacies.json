@@ -1,0 +1,13 @@
+[
+  {"id": 1, "name": "Pharmacy Innovations Denton", "city": "Denton", "phone": "940-555-0101", "status": "active"},
+  {"id": 2, "name": "Community Pharmacy Denton", "city": "Denton", "phone": "940-555-0102", "status": "active"},
+  {"id": 3, "name": "Custom Prescriptions North", "city": "Fort Worth", "phone": "817-555-0201", "status": "active"},
+  {"id": 4, "name": "Custom Prescriptions South", "city": "Austin", "phone": "512-555-0301", "status": "inactive"},
+  {"id": 5, "name": "STHI Pharmacy Dallas", "city": "Dallas", "phone": "214-555-0401", "status": "active"},
+  {"id": 6, "name": "STHI Pharmacy Plano", "city": "Plano", "phone": "214-555-0402", "status": "active"},
+  {"id": 7, "name": "STHI Pharmacy Richardson", "city": "Richardson", "phone": "214-555-0403", "status": "inactive"},
+  {"id": 8, "name": "Reed's Pharmacy", "city": "Houston", "phone": "713-555-0501", "status": "active"},
+  {"id": 9, "name": "Creative Pharmacy East", "city": "Houston", "phone": "713-555-0601", "status": "active"},
+  {"id": 10, "name": "Creative Pharmacy West", "city": "Houston", "phone": "713-555-0602", "status": "active"},
+  {"id": 11, "name": "Community Pharmacy Fort Myers", "city": "Fort Myers", "phone": "239-555-0701", "status": "active"}
+]
