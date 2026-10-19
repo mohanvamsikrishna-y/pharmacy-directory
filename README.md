@@ -1,16 +1,37 @@
-# React + Vite
+# Pharmacy Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Take-home exercise for Pharmacy Innovations.
 
-Currently, two official plugins are available:
+## Features
+- Displays a list of pharmacies with Name, City, Phone, and Status.
+- Live, case-insensitive text filter (Name or City).
+- Toggleable alphabetical sorting (A→Z, Z→A) using `localeCompare`.
+- Simulated 1-second loading state.
+- Empty state for zero results.
+- Bonus: Active-only toggle, dynamic result counter, and "Clear Filters" button.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React 19
+- Vite
+- Tailwind CSS 3
 
-## React Compiler
+## AI Usage
+Built using ChatGPT Codex in Cursor. See the `screenshots/ai-chat-history` folder for prompts and screenshots of the AI oversight process.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## UI Screenshots
 
-## Expanding the ESLint configuration
+**Initial Table View:**
+![Initial Table](./screenshots/initial%20table.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Sorting & Filtering Added:**
+![Sorting and Filtering](./screenshots/table%20with%20sorting%20filter%20added.png)
+
+**Final Table View (with count):**
+![Final Table](./screenshots/final%20table.png)
+
+### AI Oversight Proof
+**Main Prompt:**
+![Main Prompt](./screenshots/ai-chat-history/main%20prompt%201.png)
+
+**AI Hallucination Caught:**
+![AI Hallucination](./screenshots/ai-chat-history/ai%20hallucination.png)
